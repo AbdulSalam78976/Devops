@@ -1,0 +1,3 @@
+NAME           STATUS   ROLES           AGE    VERSION   DISKTYPE
+minikube       Ready    control-plane   162m   v1.37.0   
+minikube-m02   Ready    <none>          161m   v1.37.0   ssd

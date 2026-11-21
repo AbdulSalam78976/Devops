@@ -1,0 +1,3 @@
+NAME                     READY   STATUS    RESTARTS   AGE    IP           NODE           NOMINATED NODE   READINESS GATES
+hello-6d6c65cc5b-4s5bq   1/1     Running   0          110s   10.244.1.9   minikube-m02   <none>           <none>
+hello-6d6c65cc5b-qqng5   1/1     Running   0          110s   10.244.1.8   minikube-m02   <none>           <none>

@@ -1,0 +1,2 @@
+NAME   TYPE       CLUSTER-IP    EXTERNAL-IP   PORT(S)          AGE
+web    NodePort   10.108.5.50   <none>        8000:32758/TCP   5m2s

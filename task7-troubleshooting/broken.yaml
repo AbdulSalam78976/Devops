@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: broken-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: broken-app
+  template:
+    metadata:
+      labels:
+        app: brokenapp # BUG 1: does not match the selector
+    spec:
+      containers:
+        - name: web
+          image: nginx:1.999 # BUG 2: this tag does not exist
+          ports:
+            - containerPort: 80
+          env:
+            - name: MODE
+              valueFrom:
+                configMapKeyRef:
+                  name: app-settings # BUG 3: this ConfigMap does not exist
+                  key: mode
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: broken-svc
+spec:
+  selector:
+    app: broken # BUG 4: selects no pods
+  ports:
+    - port: 80
+      targetPort: 8080 # BUG 5: nginx listens on 80

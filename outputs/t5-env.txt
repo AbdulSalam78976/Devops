@@ -1,0 +1,3 @@
+DB_PASSWORD=S3cr3tPass
+DB_USER=admin
+APP_COLOR=blue

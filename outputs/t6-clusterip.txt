@@ -1,0 +1,7 @@
+Server address: 10.244.1.16:80
+Server name: webapp-6c7487884d-zzkhz
+Date: 20/Nov/2026:10:27:44 +0000
+URI: /
+Request ID: 52e8c7a49df6f6822a3b365b32ec2c99
+Session ended, resume using 'kubectl attach tester -c tester -n default -i -t' command
+pod "tester" deleted from default namespace

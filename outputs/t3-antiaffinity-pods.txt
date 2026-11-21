@@ -1,0 +1,3 @@
+NAME                    READY   STATUS              RESTARTS   AGE   IP       NODE           NOMINATED NODE   READINESS GATES
+hello-9774ff946-88wkm   0/1     ContainerCreating   0          0s    <none>   minikube-m02   <none>           <none>
+hello-9774ff946-jt5hs   0/1     Pending             0          0s    <none>   minikube       <none>           <none>

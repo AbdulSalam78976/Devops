@@ -1,0 +1,17 @@
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=blue
+ENV color=blue user=admin | FILE color=green
+ENV color=blue user=admin | FILE color=green
+ENV color=blue user=admin | FILE color=green
+ENV color=blue user=admin | FILE color=green
+ENV color=blue user=admin | FILE color=green
+ENV color=blue user=admin | FILE color=green

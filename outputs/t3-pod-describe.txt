@@ -1,0 +1,61 @@
+Name:             hello-6d6c65cc5b-4s5bq
+Namespace:        default
+Priority:         0
+Service Account:  default
+Node:             minikube-m02/192.168.49.3
+Start Time:       Fri, 20 Nov 2026 14:33:21 +0500
+Labels:           app=hello
+                  pod-template-hash=6d6c65cc5b
+Annotations:      <none>
+Status:           Running
+IP:               10.244.1.9
+IPs:
+  IP:           10.244.1.9
+Controlled By:  ReplicaSet/hello-6d6c65cc5b
+Containers:
+  hello-from:
+    Container ID:   containerd://da96562b967d53530496df1a5fdc618b4cc42dc07869a78b080b867bbe7c0ef9
+    Image:          pbitty/hello-from:latest
+    Image ID:       docker.io/pbitty/hello-from@sha256:815b60bcc226e5e8c43f5d97f778238cd96937e1e0b34da00881b3881cbfbd08
+    Port:           80/TCP (http)
+    Host Port:      0/TCP (http)
+    State:          Running
+      Started:      Fri, 20 Nov 2026 14:33:26 +0500
+    Ready:          True
+    Restart Count:  0
+    Limits:
+      cpu:     200m
+      memory:  128Mi
+    Requests:
+      cpu:        100m
+      memory:     64Mi
+    Environment:  <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-24w9p (ro)
+Conditions:
+  Type                        Status
+  PodReadyToStartContainers   True 
+  Initialized                 True 
+  Ready                       True 
+  ContainersReady             True 
+  PodScheduled                True 
+Volumes:
+  kube-api-access-24w9p:
+    Type:                    Projected (a volume that contains injected data from multiple sources)
+    TokenExpirationSeconds:  3607
+    ConfigMapName:           kube-root-ca.crt
+    Optional:                false
+    DownwardAPI:             true
+QoS Class:                   Burstable
+Node-Selectors:              disktype=ssd
+Tolerations:                 node.kubernetes.io/not-ready:NoExecute op=Exists for 300s
+                             node.kubernetes.io/unreachable:NoExecute op=Exists for 300s
+Events:
+  Type     Reason            Age    From               Message
+  ----     ------            ----   ----               -------
+  Warning  FailedScheduling  2m45s  default-scheduler  0/2 nodes are available: 2 node(s) had untolerated taint(s). preemption: 0/2 nodes are available: 2 Preemption is not helpful for scheduling.
+  Normal   Scheduled         2m38s  default-scheduler  Successfully assigned default/hello-6d6c65cc5b-4s5bq to minikube-m02
+  Normal   Pulling           2m37s  kubelet            spec.containers{hello-from}: Pulling image "pbitty/hello-from:latest"
+  Normal   Pulled            2m33s  kubelet            spec.containers{hello-from}: Successfully pulled image "pbitty/hello-from:latest" in 1.518s (3.103s including waiting). Image size: 4258961 bytes.
+  Normal   Created           2m33s  kubelet            spec.containers{hello-from}: Container created
+  Normal   Started           2m33s  kubelet            spec.containers{hello-from}: Container started

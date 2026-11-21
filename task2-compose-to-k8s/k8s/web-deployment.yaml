@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert -f compose.yaml -o k8s/
+    kompose.version: 1.35.0 (9532ceef3)
+  labels:
+    io.kompose.service: web
+  name: web
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      io.kompose.service: web
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: kompose convert -f compose.yaml -o k8s/
+        kompose.version: 1.35.0 (9532ceef3)
+      labels:
+        io.kompose.service: web
+    spec:
+      containers:
+        - image: abdulsalam78976/flask-redis-app:1.0
+          name: web
+          ports:
+            - containerPort: 5000
+              protocol: TCP
+      restartPolicy: Always

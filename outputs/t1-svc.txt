@@ -1,0 +1,2 @@
+NAME        TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)   AGE
+nginx-svc   ClusterIP   10.97.74.3   <none>        80/TCP    2m34s

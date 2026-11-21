@@ -1,0 +1,10 @@
+NAME                            CPU(cores)   MEMORY(bytes)   
+hello-6d6c65cc5b-4s5bq          1m           1Mi             
+hello-6d6c65cc5b-qqng5          1m           1Mi             
+nginx-deploy-75cc477c85-fqhd9   0m           3Mi             
+nginx-deploy-75cc477c85-kwvhc   0m           3Mi             
+nginx-deploy-75cc477c85-swb7w   0m           3Mi             
+redis-66f69bf7b-fqgfb           2m           8Mi             
+web-76df9d7c88-d7566            1m           36Mi            
+web-76df9d7c88-lk2xz            1m           29Mi            
+web-76df9d7c88-w8qgm            1m           25Mi            

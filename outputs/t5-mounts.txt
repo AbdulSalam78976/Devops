@@ -1,0 +1,7 @@
+/etc/config:
+APP_COLOR
+APP_MODE
+
+/etc/secret:
+DB_PASSWORD
+DB_USER

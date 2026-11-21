@@ -1,0 +1,82 @@
+Name:               minikube-m02
+Roles:              <none>
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    disktype=ssd
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=minikube-m02
+                    kubernetes.io/os=linux
+                    minikube.k8s.io/commit=7a9f6a841470a207de8cf4bafcccee0969d8ba10
+                    minikube.k8s.io/name=minikube
+                    minikube.k8s.io/primary=false
+                    minikube.k8s.io/updated_at=2026_11_20T11_53_28_0700
+                    minikube.k8s.io/version=v1.39.0
+Annotations:        node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Fri, 20 Nov 2026 11:53:27 +0500
+Taints:             <none>
+Unschedulable:      false
+Lease:
+  HolderIdentity:  minikube-m02
+  AcquireTime:     <unset>
+  RenewTime:       Fri, 20 Nov 2026 14:35:52 +0500
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Fri, 20 Nov 2026 14:33:20 +0500   Fri, 20 Nov 2026 11:53:27 +0500   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Fri, 20 Nov 2026 14:33:20 +0500   Fri, 20 Nov 2026 11:53:27 +0500   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Fri, 20 Nov 2026 14:33:20 +0500   Fri, 20 Nov 2026 11:53:27 +0500   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Fri, 20 Nov 2026 14:33:20 +0500   Fri, 20 Nov 2026 14:33:20 +0500   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  192.168.49.3
+  Hostname:    minikube-m02
+Capacity:
+  cpu:                3
+  ephemeral-storage:  31600816128
+  hugepages-2Mi:      0
+  memory:             6586432Ki
+  pods:               110
+Allocatable:
+  cpu:                3
+  ephemeral-storage:  31600816128
+  hugepages-2Mi:      0
+  memory:             6586432Ki
+  pods:               110
+System Info:
+  Machine ID:                 b7566eefbea02b7ce85821e86a97158b
+  System UUID:                5d594305-1832-4cfd-a3fa-40eca473c006
+  Boot ID:                    5d36a97b-8828-4219-98b0-2aed1058b3fb
+  Kernel Version:             6.19.10-300.fc44.x86_64
+  OS Image:                   Debian GNU/Linux 12 (bookworm)
+  Operating System:           linux
+  Architecture:               amd64
+  Container Runtime Version:  containerd://2.3.4
+  Kubelet Version:            v1.37.0
+PodCIDR:                      10.244.1.0/24
+PodCIDRs:                     10.244.1.0/24
+Non-terminated Pods:          (10 in total)
+  Namespace                   Name                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  Age
+  ---------                   ----                               ------------  ----------  ---------------  -------------  ---
+  default                     hello-6d6c65cc5b-4s5bq             100m (3%)     200m (6%)   64Mi (0%)        128Mi (1%)     2m45s
+  default                     hello-6d6c65cc5b-qqng5             100m (3%)     200m (6%)   64Mi (0%)        128Mi (1%)     2m45s
+  default                     nginx-deploy-75cc477c85-kwvhc      0 (0%)        0 (0%)      0 (0%)           0 (0%)         152m
+  default                     nginx-deploy-75cc477c85-swb7w      0 (0%)        0 (0%)      0 (0%)           0 (0%)         152m
+  default                     redis-66f69bf7b-fqgfb              0 (0%)        0 (0%)      0 (0%)           0 (0%)         32m
+  default                     web-76df9d7c88-lk2xz               0 (0%)        0 (0%)      0 (0%)           0 (0%)         32m
+  default                     web-76df9d7c88-w8qgm               0 (0%)        0 (0%)      0 (0%)           0 (0%)         32m
+  kube-system                 kindnet-vql9n                      100m (3%)     100m (3%)   50Mi (0%)        50Mi (0%)      162m
+  kube-system                 kube-proxy-qpft4                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         162m
+  kube-system                 metrics-server-768f9f6999-hfvbk    100m (3%)     0 (0%)      200Mi (3%)       0 (0%)         1s
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests    Limits
+  --------           --------    ------
+  cpu                400m (13%)  500m (16%)
+  memory             378Mi (5%)  306Mi (4%)
+  ephemeral-storage  0 (0%)      0 (0%)
+  hugepages-2Mi      0 (0%)      0 (0%)
+Events:
+  Type    Reason        Age                    From     Message
+  ----    ------        ----                   ----     -------
+  Normal  NodeNotReady  2m51s (x9 over 148m)   kubelet  Node minikube-m02 status is now: NodeNotReady
+  Normal  NodeReady     2m39s (x10 over 161m)  kubelet  Node minikube-m02 status is now: NodeReady

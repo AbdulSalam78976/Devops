@@ -1,0 +1,22 @@
+NAME                       TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+service/kubernetes         ClusterIP   10.96.0.1       <none>        443/TCP          3h34m
+service/mysql              ClusterIP   None            <none>        3306/TCP         41m
+service/nginx-svc          ClusterIP   10.97.74.3      <none>        80/TCP           3h21m
+service/phpmyadmin         NodePort    10.105.11.185   <none>        80:30090/TCP     41m
+service/redis              ClusterIP   10.98.168.188   <none>        6379/TCP         83m
+service/web                NodePort    10.108.5.50     <none>        8000:32758/TCP   83m
+service/webapp-clusterip   ClusterIP   10.108.123.18   <none>        80/TCP           70s
+service/webapp-nodeport    NodePort    10.108.32.121   <none>        80:30080/TCP     69s
+
+NAME                                       CLASS   HOSTS          ADDRESS        PORTS   AGE
+ingress.networking.k8s.io/webapp-ingress   nginx   webapp.local   192.168.49.2   80      69s
+
+NAME                         ENDPOINTS                                          AGE
+endpoints/kubernetes         192.168.49.2:8443                                  3h34m
+endpoints/mysql              <none>                                             41m
+endpoints/nginx-svc          10.244.0.10:80,10.244.0.4:80,10.244.0.7:80         3h21m
+endpoints/phpmyadmin         <none>                                             41m
+endpoints/redis              10.244.0.11:6379                                   83m
+endpoints/web                10.244.0.12:5000,10.244.0.5:5000,10.244.0.9:5000   83m
+endpoints/webapp-clusterip   10.244.0.19:80,10.244.1.16:80,10.244.1.17:80       69s
+endpoints/webapp-nodeport    10.244.0.19:80,10.244.1.16:80,10.244.1.17:80       69s

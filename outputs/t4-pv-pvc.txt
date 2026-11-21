@@ -1,0 +1,5 @@
+NAME                        CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM               STORAGECLASS   VOLUMEATTRIBUTESCLASS   REASON   AGE
+persistentvolume/mysql-pv   1Gi        RWO            Retain           Bound    default/mysql-pvc   manual         <unset>                          4m17s
+
+NAME                              STATUS   VOLUME     CAPACITY   ACCESS MODES   STORAGECLASS   VOLUMEATTRIBUTESCLASS   AGE
+persistentvolumeclaim/mysql-pvc   Bound    mysql-pv   1Gi        RWO            manual         <unset>                 4m17s

@@ -1,0 +1,43 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-settings # FIX 3: ConfigMap referenced by the pod now exists
+data:
+  mode: prod
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: broken-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: broken-app
+  template:
+    metadata:
+      labels:
+        app: broken-app # FIX 1: matches the selector
+    spec:
+      containers:
+        - name: web
+          image: nginx:1.27 # FIX 2: valid image tag
+          ports:
+            - containerPort: 80
+          env:
+            - name: MODE
+              valueFrom:
+                configMapKeyRef:
+                  name: app-settings
+                  key: mode
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: broken-svc
+spec:
+  selector:
+    app: broken-app # FIX 4: selects the deployment's pods
+  ports:
+    - port: 80
+      targetPort: 80 # FIX 5: nginx listens on 80

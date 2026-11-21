@@ -1,0 +1,10 @@
+services:
+  web:
+    image: abdulsalam78976/flask-redis-app:1.0
+    restart: always
+    ports:
+      - "8000:5000"
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"

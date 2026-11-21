@@ -1,0 +1,5 @@
+Server address: 10.244.1.17:80
+Server name: webapp-6c7487884d-kcb5g
+Date: 20/Nov/2026:10:27:50 +0000
+URI: /
+Request ID: 7e10260ca0043e37c4b5015d8365f70a

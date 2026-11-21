@@ -1,0 +1,10 @@
+NAME                            READY   STATUS              RESTARTS   AGE     IP            NODE           NOMINATED NODE   READINESS GATES
+hello-6d6c65cc5b-5dqj7          1/1     Running             0          2m17s   10.244.1.11   minikube-m02   <none>           <none>
+hello-6d6c65cc5b-sm9c4          1/1     Running             0          2m17s   10.244.1.12   minikube-m02   <none>           <none>
+nginx-deploy-75cc477c85-2zqz7   1/1     Running             0          2m17s   10.244.0.10   minikube       <none>           <none>
+nginx-deploy-75cc477c85-fqhd9   1/1     Running             0          156m    10.244.0.4    minikube       <none>           <none>
+nginx-deploy-75cc477c85-lgwjb   1/1     Running             0          2m17s   10.244.0.7    minikube       <none>           <none>
+redis-66f69bf7b-d4r64           0/1     ContainerCreating   0          2m17s   <none>        minikube       <none>           <none>
+web-76df9d7c88-27blp            1/1     Running             0          2m17s   10.244.0.12   minikube       <none>           <none>
+web-76df9d7c88-d7566            1/1     Running             0          41m     10.244.0.5    minikube       <none>           <none>
+web-76df9d7c88-vrw9r            1/1     Running             0          2m17s   10.244.0.9    minikube       <none>           <none>
